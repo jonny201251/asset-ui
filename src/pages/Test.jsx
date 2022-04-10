@@ -9,6 +9,7 @@ import { contextPath,post } from '../utils'
 
 
 const NormalUpload = (props) => {
+
   return <Upload
     {...props}
     action={contextPath + '/uploadFile'}
