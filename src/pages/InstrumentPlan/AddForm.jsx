@@ -36,7 +36,7 @@ const InputButton = (props) => {
       <Input {...props} style={{ ...props.style }}/>
     </div>
   } else {
-    props.form.query('list.' + index + '.*(!lifeCycle,remark,name,level)').forEach(field => field.setPattern('disabled'))
+    props.form.query('list.' + index + '.*(!lifeCycle,remark,name,level,number,price)').forEach(field => field.setPattern('disabled'))
     return <div style={{ display: 'inline-flex', width: '100%' }}>
       <Input {...props} style={{ ...props.style }} readOnly/>
       <Button onClick={(e) => {
@@ -63,6 +63,7 @@ export default (props) => {
     if (type === 'add') {
       const user = session.getItem('user')
       form.setValues({
+        year: new Date().getFullYear() + 1,
         checkName: (new Date().getFullYear() + 1) + '年的设备仪器仪表计划',
         startDatetime: new Date().Format('yyyy-MM-dd hh:mm:ss'),
         userId: user.id,
@@ -196,11 +197,11 @@ export default (props) => {
           </SchemaField.Void>
           <SchemaField.Void
             x-component="ArrayTable.Column" x-component-props={{ width: 100, title: '数量', align: 'center' }}>
-            <SchemaField.Number name="number" x-decorator="FormItem" x-component="NumberPicker"/>
+            <SchemaField.Number name="number" required x-decorator="FormItem" x-component="NumberPicker"/>
           </SchemaField.Void>
           <SchemaField.Void
             x-component="ArrayTable.Column" x-component-props={{ width: 100, title: '参考价格', align: 'center' }}>
-            <SchemaField.Number name="price" x-decorator="FormItem" x-component="NumberPicker"/>
+            <SchemaField.Number required name="price" x-decorator="FormItem" x-component="NumberPicker"/>
           </SchemaField.Void>
           <SchemaField.Void x-component="ArrayTable.Column" x-component-props={{ title: '生产厂商', align: 'center' }}>
             <SchemaField.String name="factory" x-decorator="FormItem" x-component="Input"/>

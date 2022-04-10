@@ -63,11 +63,11 @@ export default () => {
           <Menu.Item key="4-固定资产类别-categoryPath">固定资产类别</Menu.Item>
           <Menu.SubMenu title="年度计划" key="年度计划">
             <Menu.Item key="1-办公营具计划-officeToolPlanPath">办公营具计划</Menu.Item>
-            <Menu.Item key="22-办公营具汇总-sysDicPath">办公营具汇总</Menu.Item>
-            <Menu.Item key="22-办公营具预算-sysDicPath">办公营具预算</Menu.Item>
+            <Menu.Item key="22-办公营具汇总-officeToolPlan2Path">办公营具汇总</Menu.Item>
+            <Menu.Item key="22-办公营具预算-officeToolPlan3Path">办公营具预算</Menu.Item>
             <Menu.Item key="11-设备仪器仪表计划-instrumentPlanPath">设备仪器仪表计划</Menu.Item>
-            <Menu.Item key="33-设备仪器仪表汇总-sysDicPath">设备仪器仪表汇总</Menu.Item>
-            <Menu.Item key="33-设备仪器仪表预算-sysDicPath">设备仪器仪表预算</Menu.Item>
+            <Menu.Item key="33-设备仪器仪表汇总-instrumentPlan2Path">设备仪器仪表汇总</Menu.Item>
+            <Menu.Item key="33-设备仪器仪表预算-instrumentPlan3Path">设备仪器仪表预算</Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="1-办公营具购置-assetBuy1Path">办公营具购置</Menu.Item>
           <Menu.Item key="1-设备仪器仪表购置-assetBuy2Path">设备仪器仪表购置</Menu.Item>

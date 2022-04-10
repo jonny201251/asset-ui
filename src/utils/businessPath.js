@@ -9,9 +9,14 @@ import CategoryList from '../pages/Category/List'
 import OfficeToolPlanList from '../pages/OfficeToolPlan/List'
 import OfficeToolPlanAddForm from '../pages/OfficeToolPlan/AddForm'
 import OfficeToolPlanViewForm from '../pages/OfficeToolPlan/ViewForm'
+import OfficeToolPlan2List from '../pages/OfficeToolPlan2/List'
+import OfficeToolPlan2Form from '../pages/OfficeToolPlan2/Form'
 import InstrumentPlanList from '../pages/InstrumentPlan/List'
 import InstrumentPlanAddForm from '../pages/InstrumentPlan/AddForm'
 import InstrumentPlanViewForm from '../pages/InstrumentPlan/ViewForm'
+import InstrumentPlan2List from '../pages/InstrumentPlan2/List'
+import InstrumentPlan2Form from '../pages/InstrumentPlan2/Form'
+
 import AssetBuy1List from '../pages/AssetBuy1/List'
 import AssetBuy1AddForm from '../pages/AssetBuy1/AddForm'
 import AssetBuy1ViewForm from '../pages/AssetBuy1/ViewForm'
@@ -112,6 +117,11 @@ export const officeToolPlanPath = {
   get: contextPath + '/officeToolPlan/get',
   btnHandle: contextPath + '/officeToolPlan/btnHandle',
 }
+export const officeToolPlan2Path = {
+  flag: 'officeToolPlan2Path', List: OfficeToolPlan2List,Form: OfficeToolPlan2Form,
+  list: contextPath + '/officeToolPlan2/list',
+  get: contextPath + '/officeToolPlan2/get',
+}
 export const instrumentPlanPath = {
   flag: 'instrumentPlanPath', width: 1600, List: InstrumentPlanList,
   AddForm: InstrumentPlanAddForm, EditForm: InstrumentPlanAddForm,
@@ -119,6 +129,11 @@ export const instrumentPlanPath = {
   list: contextPath + '/instrumentPlan/list',
   get: contextPath + '/instrumentPlan/get',
   btnHandle: contextPath + '/instrumentPlan/btnHandle',
+}
+export const instrumentPlan2Path = {
+  flag: 'instrumentPlan2Path', List: InstrumentPlan2List,Form: InstrumentPlan2Form,
+  list: contextPath + '/instrumentPlan2/list',
+  get: contextPath + '/instrumentPlan2/get',
 }
 export const assetBuy1Path = {
   flag: 'assetBuy1Path', width: 1600, List: AssetBuy1List,

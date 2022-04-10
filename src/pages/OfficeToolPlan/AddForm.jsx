@@ -62,6 +62,7 @@ export default (props) => {
     if (type === 'add') {
       const user = session.getItem('user')
       form.setValues({
+        year:new Date().getFullYear() + 1,
         checkName: (new Date().getFullYear() + 1) + '年的办公营具计划', startDatetime: new Date().Format('yyyy-MM-dd hh:mm:ss'),
         userId: user.id, displayName: user.displayName, loginName: user.loginName,
         deptId: user.deptId, deptName: user.deptName,
