@@ -11,6 +11,7 @@ import { contextPath,post } from '../utils'
 const NormalUpload = (props) => {
 
   return <Upload
+
     {...props}
     action={contextPath + '/uploadFile'}
     headers={{
@@ -20,6 +21,8 @@ const NormalUpload = (props) => {
     <Button icon={<UploadOutlined/>}>上传文件</Button>
   </Upload>
 }
+
+
 
 //文本框+按钮
 const InputButton2 = (props) => {
