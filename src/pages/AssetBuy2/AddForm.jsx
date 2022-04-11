@@ -96,6 +96,15 @@ export default (props) => {
                     const values = await form2.submit()
                     if (values.selectedRow) {
                       //
+                      row['name']=values.selectedRow.name
+                      row['categoryId']=values.selectedRow.categoryId
+                      row['categoryName']=values.selectedRow.categoryName
+                      row['unit']=values.selectedRow.unit
+                      row['number']=values.selectedRow.number
+                      row['price']=values.selectedRow.price
+                      row['factory']=values.selectedRow.factory
+                      row['brand']=values.selectedRow.brand
+                      row['guid']=values.selectedRow.guid
                       dialog2.close()
                     } else {
                       message.error('选择一条数据')

@@ -53,7 +53,6 @@ export default (props) => {
         deptId: user.deptId, deptName: user.deptName,
       })
     }
-    form.query('list.*.categoryName').forEach(field => field.setPattern('disabled'))
   }, [])
 
   const onClick = (index, row) => {
@@ -69,10 +68,6 @@ export default (props) => {
                   const values = await form2.submit()
                   if (values.selectedRow) {
                     //
-                    row['assetName'] = values.selectedRow.name
-                    row['categoryId'] = values.selectedRow.categoryId
-                    row['categoryName'] = values.selectedRow.categoryName
-                    row['guid'] = values.selectedRow.guid
                     dialog2.close()
                   } else {
                     message.error('选择一条数据')
@@ -102,6 +97,16 @@ export default (props) => {
               x-component="ArrayTable.Column"
               x-component-props={{ width: 80, title: '序号', align: 'center' }}>
               <SchemaField.Void x-decorator="FormItem" x-component="ArrayTableIndex"/>
+            </SchemaField.Void>
+            <SchemaField.Void x-component="ArrayTable.Column" x-component-props={{ title: '生命周期', align: 'center' }}>
+              <SchemaField.String
+                name="lifeCycle" required x-decorator="FormItem" x-component="Select"
+                enum={[
+                  { label: '维修', value: '维修' },
+                  { label: '保养', value: '保养' },
+                  { label: '检测', value: '检测' },
+                ]}
+              />
             </SchemaField.Void>
             <SchemaField.Void x-component="ArrayTable.Column"
                               x-component-props={{ width: 200, title: '资产名称', align: 'center' }}>

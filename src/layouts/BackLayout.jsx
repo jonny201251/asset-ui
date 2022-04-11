@@ -87,11 +87,14 @@ export default () => {
           <Menu.Item key="4-设备移动-assetMovePath">设备移动</Menu.Item>
           <Menu.Item key="4-设备调拨-assetTurnPath">设备调拨</Menu.Item>
           <Menu.SubMenu title="报废管理" key="报废管理">
-            <Menu.Item key="1-报废申请-assetScrapPath">报废申请</Menu.Item>
-            <Menu.Item key="11-报废价值鉴定-assetScrapValuePath">报废价值鉴定</Menu.Item>
             <Menu.Item key="11-报废鉴定项目-assetScrapProject1Path">报废鉴定项目</Menu.Item>
+            <Menu.Item key="1-报废申请-assetScrapPath">报废申请</Menu.Item>
+            <Menu.Item key="11-报废处置-assetScrapValuePath">报废处置</Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="4-资产查询-sysDicPath">资产查询</Menu.Item>
+          <Menu.Item key="4-盘点管理-sysDicPath">盘点管理</Menu.Item>
+          <Menu.Item key="4-计提折旧-sysDicPath">计提折旧</Menu.Item>
+          <Menu.Item key="4-提满折旧-sysDicPath">提满折旧</Menu.Item>
         </Menu.SubMenu>
       )
     }

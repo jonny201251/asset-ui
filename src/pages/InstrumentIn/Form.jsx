@@ -80,6 +80,11 @@ export default (props) => {
                     const values = await form2.submit()
                     if (values.selectedRow) {
                       //
+                      row['name'] = values.selectedRow.name
+                      row['categoryId'] = values.selectedRow.categoryId
+                      row['categoryName'] = values.selectedRow.categoryName
+                      row['number'] = values.selectedRow.number
+                      row['price'] = values.selectedRow.price
                       dialog2.close()
                     } else {
                       message.error('选择一条数据')
@@ -118,6 +123,7 @@ export default (props) => {
                 enum={[
                   { label: '新购', value: '新购' },
                   { label: '无偿转入', value: '无偿转入' },
+                  { label: '在建工程转入', value: '在建工程转入' },
                 ]}
               />
             </SchemaField.Void>

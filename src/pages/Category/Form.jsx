@@ -26,7 +26,7 @@ export default (props) => {
           x-component="TreeSelect" x-component-props={{ treeDefaultExpandAll: true }}/>
         <SchemaField.String name="name" required title="资产类别" x-decorator="FormItem" x-component="Input"/>
         <SchemaField.String name="useYear" required title="使用年限" x-decorator="FormItem" x-component="Input"/>
-        <SchemaField.String name="codePrefix" required title="资产编号前缀" x-decorator="FormItem" x-component="Input"/>
+        <SchemaField.String name="codePrefix"  title="资产编号前缀" x-decorator="FormItem" x-component="Input"/>
         <SchemaField.Number name="sort" x-decorator="FormItem" title="排序" x-component="NumberPicker"/>
         <SchemaField.String
           name="remark" title="备注" x-decorator="FormItem"
