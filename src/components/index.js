@@ -12,7 +12,7 @@ import { ArrayTable, Upload } from '@formily/antd'
 import React from 'react'
 import { clone, isValid } from '@formily/shared'
 import { useField } from '@formily/react'
-import { Button, Input, InputNumber } from 'antd'
+import { Button, Input, InputNumber,Card } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import { contextPath } from '../utils'
 
@@ -153,4 +153,12 @@ const File = (props) => {
 }
 
 export { File }
+
+const MyCard = (props) => {
+  return <Card size={'small'} title={<b style={{textAlign:'center'}}>{props.title}</b>}
+               bodyStyle={{ paddingBottom: 0, paddingLeft: 0, paddingRight: 0 }}
+               style={{ marginBottom: 10 }}>{props.children}</Card>
+}
+
+export {MyCard}
 

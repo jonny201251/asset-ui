@@ -1,15 +1,2 @@
-# umi project
-
-## Getting Started
-
-Install dependencies,
-
-```bash
-$ yarn
-```
-
-Start the dev server,
-
-```bash
-$ yarn start
-```
+BaseProTable，增删改查使用的是Form一个表单
+BaseProTable2，增删改查使用的是多个表单

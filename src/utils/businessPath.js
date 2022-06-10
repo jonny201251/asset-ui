@@ -42,6 +42,12 @@ import OfficeToolCardForm from '../pages/OfficeToolCard/Form'
 import OfficeToolCardEditForm from '../pages/OfficeToolCard/EditForm'
 import OfficeToolCardViewForm from '../pages/OfficeToolCard/ViewForm'
 import OfficeToolCardList from '../pages/OfficeToolCard/List'
+
+import HouseCardForm from '../pages/HouseCard/Form'
+import HouseCardEditForm from '../pages/HouseCard/EditForm'
+import HouseCardViewForm from '../pages/HouseCard/ViewForm'
+import HouseCardList from '../pages/HouseCard/List'
+
 import AssetRepairList from '../pages/AssetRepair/List'
 import AssetRepairAddForm from '../pages/AssetRepair/AddForm'
 import AssetRepairViewForm from '../pages/AssetRepair/ViewForm'
@@ -185,12 +191,20 @@ export const instrumentCardPath = {
   edit: contextPath + '/instrumentCard/edit',
 }
 export const officeToolCardPath = {
-  flag: 'officeToolCardPath', width: 1300, width2: 1300, Form: OfficeToolCardForm, List: OfficeToolCardList,
+  flag: 'officeToolCardPath', width: 1000, width2: 1000, Form: OfficeToolCardForm, List: OfficeToolCardList,
   EditForm: OfficeToolCardEditForm, ViewForm: OfficeToolCardViewForm,
   list: contextPath + '/officeToolCard/list',
   get: contextPath + '/officeToolCard/get',
   add: contextPath + '/officeToolCard/add',
   edit: contextPath + '/officeToolCard/edit',
+}
+export const houseCardPath = {
+  flag: 'houseCardPath', width: 1000, width2: 1000, Form: HouseCardForm, List: HouseCardList,
+  EditForm: HouseCardEditForm, ViewForm: HouseCardViewForm,
+  list: contextPath + '/houseCard/list',
+  get: contextPath + '/houseCard/get',
+  add: contextPath + '/houseCard/add',
+  edit: contextPath + '/houseCard/edit',
 }
 export const assetRepairPath = {
   flag: 'assetRepairPath', width: 1600, List: AssetRepairList,

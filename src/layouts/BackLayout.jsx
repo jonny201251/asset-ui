@@ -77,7 +77,8 @@ export default () => {
             <Menu.Item key="11-出库-instrumentOutPath">出库</Menu.Item>
             <Menu.Item key="11-登记卡片-instrumentCardPath">登记卡片</Menu.Item>
           </Menu.SubMenu>
-          <Menu.Item key="4-办公营具登记卡片-officeToolCardPath">办公营具登记卡片</Menu.Item>
+          <Menu.Item key="4-办公营具登记卡片-officeToolCardPath">办公营具卡片</Menu.Item>
+          <Menu.Item key="4-房屋及构建筑物卡片-houseCardPath">房屋及构建筑物卡片</Menu.Item>
           <Menu.SubMenu title="维保检管理" key="维保检管理">
             <Menu.Item key="1-维修申请-assetRepairPath">维保检申请</Menu.Item>
             <Menu.Item key="11-维保检验收-assetAcceptPath">维保检验收</Menu.Item>
