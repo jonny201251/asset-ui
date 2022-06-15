@@ -94,8 +94,15 @@ export default () => {
           </Menu.SubMenu>
           <Menu.Item key="4-资产查询-sysDicPath">资产查询</Menu.Item>
           <Menu.Item key="4-盘点管理-sysDicPath">盘点管理</Menu.Item>
-          <Menu.Item key="4-计提折旧-sysDicPath">计提折旧</Menu.Item>
-          <Menu.Item key="4-提满折旧-sysDicPath">提满折旧</Menu.Item>
+          <Menu.SubMenu title="折旧管理" key="折旧管理">
+            <Menu.Item key="11-提满折旧-assetScrapProject1Path">提满折旧</Menu.Item>
+            <Menu.Item key="1-计提折旧-assetScrapPath">计提折旧</Menu.Item>
+          </Menu.SubMenu>
+          <Menu.SubMenu title="报表" key="报表">
+            <Menu.Item key="11-车辆情况-assetScrapProject1Path">车辆情况</Menu.Item>
+            <Menu.Item key="1-房屋情况-assetScrapPath">房屋情况</Menu.Item>
+            <Menu.Item key="1-资产台账-assetScrapPath">资产台账</Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       )
     }
